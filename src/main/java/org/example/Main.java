@@ -3,13 +3,16 @@ package org.example;
 /**
  * Основний клас програми.
  */
-public class Main {
+public final class Main {
 
     /**
-     * Приватний конструктор, щоб запобігти створенню екземпляра утилітного класу.
+     * Приватний конструктор,
+     * щоб запобігти створенню екземпляра утилітного класу.
      */
     private Main() {
-        throw new UnsupportedOperationException("This is a utility class and cannot be instantiated");
+        throw new UnsupportedOperationException(
+                "This is a utility class and cannot be instantiated"
+        );
     }
 
     /**
